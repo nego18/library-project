@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: linear-gradient(95deg, lightblue, lightgreen);
+}
+
+:root {
+    --headings-size: 2.5rem;
+    --headings-font: helvetica;
+    --headings-color: rgb(113, 187, 183); 
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    flex-grow: 30%;
+    background: linear-gradient(37deg, darkgreen, darkblue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    z-index: 1;
+}
+
+.sidebar h2 {
+    font-size: var(--headings-size);
+    color: var(--headings-color);
+    background: transparent;
+}
+
+.sidebar label {
+    background: transparent;
+    font-size: 1.5rem;
+}
+
+.sidebar input {
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.sidebar .radio-buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+}
+
+.sidebar button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebar button:hover {
+    background: white;
+    color: black;
+}
+
+.sidebar button:active {
+    background: blue;
+    color: white;
+}
+
+.container section {
+    position: absolute;
+    flex-grow: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    left: 400px;
+}
+
+.remove {
+    width: 50%;
+    height: 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.remove:hover {
+    border: 2px solid black;
+    background: white;
+}
+
+.remove:active {
+    background: blue;
+    color: white;
+}
+
+p {
+    background: transparent;
+    font-size: 16px;
+}
+
+#books-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container-button {
+    display: flex;
+    gap: 10px;
+    background: transparent;
+}
+
+.status-button {
+    width: 150px;
+    height: 50px;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.status-button:active {
+    background: black;
+}
